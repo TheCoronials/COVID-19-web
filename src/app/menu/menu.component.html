@@ -1,0 +1,26 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+
+<nav ngbNav #nav="ngbNav" class="nav-tabs">
+  <a class="navbar-brand" href="#">DIGISIST</a>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Overview</a>
+    <ng-template ngbNavContent>
+      <app-page></app-page>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>About</a>
+    <ng-template ngbNavContent>
+      <app-page-about></app-page-about>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Techincal</a>
+    <ng-template ngbNavContent>
+      <app-page-tech></app-page-tech>
+    </ng-template>
+  </ng-container>
+</nav>
+<!-- </nav> -->
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>

@@ -1,0 +1,29 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
+
+:host {
+  .nav-tabs {
+    border: none;
+    background-color: #262730;
+    padding: 16px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .navbar-brand {
+      color: white;
+    }
+
+    .nav-link {
+      color: white;
+      &:hover {
+        border: none !important;
+      }
+    }
+  }
+  .active {
+    background-color: transparent !important;
+    border: none !important;
+    color: #33684a !important;
+  }
+}
